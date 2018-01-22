@@ -27,9 +27,7 @@ get_roots(a, b, c)
 from quadratic_equation import get_roots
 
 a, b, c = map(int, input().split())
-
 x1, x2 = get_roots(a, b, c)
-
 print(x1, x2)
 ```
 
