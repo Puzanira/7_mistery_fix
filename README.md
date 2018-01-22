@@ -1,28 +1,31 @@
-# Решатель квадратных уравнений
+# Quadratic Equation Solver
 
-Функция для решения квадраных уравнений в отдельном файле
+If you have an equation of the form _ax^2 + bx + c = 0_, I can solve it for you.
 
-# Как использовать
+# How to use:
 
-Реализована функция 
+In a file there is a function
 ``` python
 get_roots(a, b, c)
 ```
-**Входные данные**: три числа - коэффициенты a, b, c квадратного уравнения _ах^2 + бх + с_
+**Input**: It takes 3 numbers - coefficiens a, b, c from the formula
 
-**Вывод**:
+_ax^2 + bx + c = 0_
+
+**Output**: Discriminant = _b^2 − 4*a*c_
  
- * два корня - если дискриминант > 0 
- * один корень, Ноне - если дискриминант == 0 
- * Ноне, Ноне - если дискриминант < 0    
+ * two roots: (x1, x2) - if discriminant > 0 
+ * one root, None: (x1, None) - if discriminant == 0 
+ * None, None: (None, None) - if discriminant < 0    
 
-# Как запустить
+# How to launch:
 
-Скрипт требует для своей работы установленного интерпретатора Python версии 3.5
+You need pre-installed Python 3.5 of higher
 
-Пример использования:
+**Usage Example**:
 
 ```python 
+#import the function
 from quadratic_equation import get_roots
 
 a, b, c = map(int, input().split())
@@ -30,6 +33,6 @@ x1, x2 = get_roots(a, b, c)
 print(x1, x2)
 ```
 
-# Цели проекта
+# Project Goals
 
-Код создан в учебных целях. В рамках учебного курса по веб-разработке ― [DEVMAN.org](https://devman.org)
+For educational purposes only. [DEVMAN.org](https://devman.org)
