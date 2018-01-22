@@ -23,7 +23,6 @@ get_roots(a, b, c)
 Пример использования:
 
 ```python 
-# импортируем саму функцию
 from quadratic_equation import get_roots
 
 a, b, c = map(int, input().split())
