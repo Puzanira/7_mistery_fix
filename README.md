@@ -32,6 +32,16 @@ a, b, c = map(int, input().split())
 x1, x2 = get_roots(a, b, c)
 print(x1, x2)
 ```
+**Unit Testing:**
+
+Testing with Python's ```unittest``` module. 
+[```unittest```- Automated testing framework](https://github.com/cgoldberg/python-unittest-tutorial#unittest---automated-testing-framework)
+
+Example of script launch on Linux, Python 3.5::
+
+```bash
+python tests.py
+```
 
 # Project Goals
 
