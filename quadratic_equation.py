@@ -1,8 +1,9 @@
 from math import sqrt
 
 
-def get_negative_root(a, b, D):
-    return (-b - sqrt(D)) / (2 * a)
+def get_negative_root(a, b, discriminant):
+    root = (-b - sqrt(discriminant)) / (2 * a)
+    return root
 
 
 def get_roots(a, b, c):
